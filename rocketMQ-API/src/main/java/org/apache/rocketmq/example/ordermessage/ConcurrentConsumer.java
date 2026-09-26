@@ -32,16 +32,30 @@ public class ConcurrentConsumer {
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
         consumer.subscribe("OrderTopic", "*");
-        consumer.setNamesrvAddr("192.168.65.112:9876");
-        consumer.registerMessageListener(new MessageListenerConcurrently() {
+        consumer.setNamesrvAddr("192.168.1.4:9876");
+
+        //保证顺序的获得到消息，局部有序，并不需要所有消息都是有序的
+        consumer.registerMessageListener(new MessageListenerOrderly() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
-                for (MessageExt msg : msgs) {
-                        System.out.println(new String(msg.getBody()));
+            public ConsumeOrderlyStatus consumeMessage(List<MessageExt> list, ConsumeOrderlyContext consumeOrderlyContext) {
+                //获取到消息并消费消息
+                for (MessageExt msg : list) {
+                    System.out.println("收到消息"+new String(msg.getBody()));
                 }
-                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+                //消费者返回状态
+                return ConsumeOrderlyStatus.SUCCESS;
             }
         });
+
+//        consumer.registerMessageListener(new MessageListenerConcurrently() {
+//            @Override
+//            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+//                for (MessageExt msg : msgs) {
+//                        System.out.println(new String(msg.getBody()));
+//                }
+//                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+//            }
+//        });
 
         consumer.start();
         System.out.printf("Consumer Started.%n");

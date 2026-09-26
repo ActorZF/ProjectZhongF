@@ -37,7 +37,7 @@ public class OrderConsumer {
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
         consumer.subscribe("OrderTopic", "*");
-        consumer.setNamesrvAddr("192.168.65.112:9876");
+        consumer.setNamesrvAddr("192.168.1.4:9876");
         consumer.registerMessageListener(new MessageListenerOrderly() {
             @Override
             public ConsumeOrderlyStatus consumeMessage(List<MessageExt> msgs, ConsumeOrderlyContext context) {
