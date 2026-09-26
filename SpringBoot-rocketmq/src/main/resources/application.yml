@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/itheima?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&tinyInt1isBit=false&allowPublicKeyRetrieval=true&allowMultiQueries=true&useServerPrepStmts=false
+    username: root
+    password: zz22
+rocketmq:
+  #rocketmq.pull-consumer.group=
+  #rocketmq.pull-consumer.topic=
+  name-server: 192.168.1.4:9876
+  producer:
+    #配了发送者，才会初始化RocketMQTemplate
+    group:  springBootGroup
+  consumer:
+    #如果这里不配，那就需要在消费者的注解中配。
+    #rocketmq.consumer.topic=
+    group: testGroup
+server:
+  port: 9000

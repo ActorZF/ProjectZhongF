@@ -47,7 +47,7 @@ public class TimerMessageProducer {
             // The effect is the same as the above
             // message.setDelayTimeMs(10_000L);
             // Set the specific delivery time, and the effect is the same as the above
-            message.setDeliverTimeMs(System.currentTimeMillis() + 10_000L);
+            message.setDeliverTimeMs(System.currentTimeMillis() + 10_000L);//时间轮
             // Send the message
             SendResult result = producer.send(message);
             System.out.printf(result + "\n");

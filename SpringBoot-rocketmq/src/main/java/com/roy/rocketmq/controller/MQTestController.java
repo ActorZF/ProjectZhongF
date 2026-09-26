@@ -24,6 +24,12 @@ public class MQTestController {
         return "消息发送完成";
     }
 
+    @RequestMapping("/sendsyncTimeMessage")
+    public String sendsyncTimeMessage(String message){
+        producer.sendsyncTimeMessage(topic,message);
+        return "延迟消息发送完成";
+    }
+
     //这个发送事务消息的例子中有很多问题，需要注意下。
     @RequestMapping("/sendTransactionMessage")
     public String sendTransactionMessage(String message) throws InterruptedException {

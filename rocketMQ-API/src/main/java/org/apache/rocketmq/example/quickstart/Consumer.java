@@ -31,7 +31,7 @@ public class Consumer {
 
     public static final String CONSUMER_GROUP = "newGroup";
     public static final String DEFAULT_NAMESRVADDR = "192.168.1.4:9876";
-    public static final String TOPIC = "TopicTest";
+    public static final String TOPIC = "TransTopic";
 
     public static void main(String[] args) throws MQClientException {
 

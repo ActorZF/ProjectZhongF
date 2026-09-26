@@ -12,11 +12,13 @@ import org.springframework.stereotype.Component;
 //消费者
 @Component
 //@RocketMQMessageListener(consumerGroup = "MyConsumerGroup", topic = "TestTopic",consumeMode= ConsumeMode.CONCURRENTLY,messageModel= MessageModel.BROADCASTING)
-@RocketMQMessageListener(consumerGroup = "MyConsumerGroup", topic = "TestTopic")
+@RocketMQMessageListener(consumerGroup = "CourseConsumerGroup", topic = "CourseTopic")
 //
-public class SpringConsumer implements RocketMQListener<String> {
+public class CourseConsumer implements RocketMQListener<String> {
+
     @Override
     public void onMessage(String message) {
-        System.out.println("Received message : "+ message);
+
+        System.out.println("当前学员情况消息 : "+ message);
     }
 }

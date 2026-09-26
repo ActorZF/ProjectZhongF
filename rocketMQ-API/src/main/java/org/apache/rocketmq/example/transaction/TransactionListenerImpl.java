@@ -39,13 +39,13 @@ public class TransactionListenerImpl implements TransactionListener {
         System.out.println("executeLocalTransaction tags:" + tags);
         switch (tags) {
             case "TagA" -> {
-                return LocalTransactionState.COMMIT_MESSAGE;
+                return LocalTransactionState.COMMIT_MESSAGE;//提交消息
             }
             case "TagB" -> {
-                return LocalTransactionState.ROLLBACK_MESSAGE;
+                return LocalTransactionState.ROLLBACK_MESSAGE;//回滚消息，不提交过去，直接丢弃消息
             }
         }
-        return LocalTransactionState.UNKNOW;
+        return LocalTransactionState.UNKNOW;//过一段时间重新提交消息执行，重试机制，重试回查，回查时间有次数限制，可以在broker中配置
     }
 
     @Override
@@ -68,12 +68,15 @@ public class TransactionListenerImpl implements TransactionListener {
         System.out.println("checkLocalTransaction tags:" + tags);
         switch (tags){
             case "TagC" -> {
-                return LocalTransactionState.COMMIT_MESSAGE;
+                return LocalTransactionState.COMMIT_MESSAGE;//提交消息
+            }
+            case "TagE" -> {
+                return LocalTransactionState.COMMIT_MESSAGE;//提交消息
             }
             case "TagD" -> {
-                return LocalTransactionState.ROLLBACK_MESSAGE;
+                return LocalTransactionState.ROLLBACK_MESSAGE;//回滚消息，不提交过去，直接丢弃消息
             }
         }
-        return LocalTransactionState.UNKNOW;
+        return LocalTransactionState.UNKNOW;//过一段时间重新提交消息执行，重试机制
     }
 }

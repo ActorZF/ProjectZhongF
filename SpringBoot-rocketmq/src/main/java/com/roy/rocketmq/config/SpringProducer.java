@@ -1,5 +1,7 @@
 package com.roy.rocketmq.config;
 
+import com.alibaba.fastjson.TypeReference;
+import com.roy.rocketmq.domain.ProductWithPayload;
 import jakarta.annotation.Resource;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
@@ -22,24 +24,37 @@ public class SpringProducer {
     @Resource
     private DefaultMQProducer defaultMQProducer;
 
-    public void sendMessage(String topic,String msg){
-        this.rocketMQTemplate.convertAndSend(topic,msg);
+    public void sendMessage(String topic, String msg) {
+//        rocketMQTemplate.asyncSend("");//异步发送
+        //syncSendDelayTimeMills(null,msg,1000L)
+        this.rocketMQTemplate.convertAndSend(topic, msg);
     }
 
-    public void sendMessageInTransaction(String topic,String msg) throws InterruptedException {
-        String[] tags = new String[] {"TagA", "TagB", "TagC", "TagD", "TagE"};
+    public void sendsyncMessage(String topic, String msg) {
+        this.rocketMQTemplate.syncSend(topic, msg);
+    }
+
+    public void sendsyncTimeMessage(String topic, String msg) {
+        this.rocketMQTemplate.sendAndReceive(topic, msg,
+                new TypeReference<ProductWithPayload<String>>() {
+                }.getType(), 30000, 3);;
+    }
+
+    public void sendMessageInTransaction(String topic, String msg) throws InterruptedException {
+        String[] tags = new String[]{"TagA", "TagB", "TagC", "TagD", "TagE"};
         for (int i = 0; i < 10; i++) {
             //尝试在Header中加入一些自定义的属性。
             Message<String> message = MessageBuilder.withPayload(msg)
-                    .setHeader(RocketMQHeaders.TRANSACTION_ID,"TransID_"+i)
+                    .setHeader(RocketMQHeaders.TRANSACTION_ID, "TransID_" + i)
                     //发到事务监听器里后，这个自己设定的TAGS属性会丢失。但是上面那个属性不会丢失。
-                    .setHeader(RocketMQHeaders.TAGS,tags[i % tags.length])
+                    .setHeader(RocketMQHeaders.TAGS, tags[i % tags.length])
                     //MyProp在事务监听器里也能拿到，为什么就单单这个RocketMQHeaders.TAGS拿不到？这只能去调源码了。
-                    .setHeader("MyProp","MyProp_"+i)
+                    .setHeader("MyProp", "MyProp_" + i)
                     .build();
-            String destination =topic+":"+tags[i % tags.length];
+            String destination = topic + ":" + tags[i % tags.length];
+
             //这里发送事务消息时，还是会转换成RocketMQ的Message对象，再调用RocketMQ的API完成事务消息机制。
-            SendResult sendResult = rocketMQTemplate.sendMessageInTransaction(destination, message,destination);
+            SendResult sendResult = rocketMQTemplate.sendMessageInTransaction(destination, message, destination);
             System.out.printf("%s%n", sendResult);
 
             Thread.sleep(10);

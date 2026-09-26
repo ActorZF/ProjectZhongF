@@ -25,7 +25,7 @@ import java.nio.charset.StandardCharsets;
 public class ScheduledMessageProducer {
 
     public static final String PRODUCER_GROUP = "ExampleProducerGroup";
-    public static final String DEFAULT_NAMESRVADDR = "192.168.65.112:9876";
+    public static final String DEFAULT_NAMESRVADDR = "192.168.1.4:9876";
     public static final String TOPIC = "TestTopic";
 
     public static void main(String[] args) throws Exception {
@@ -41,7 +41,8 @@ public class ScheduledMessageProducer {
         for (int i = 0; i < totalMessagesToSend; i++) {
             Message message = new Message(TOPIC, ("Hello scheduled message " + i).getBytes(StandardCharsets.UTF_8));
             // This message will be delivered to consumer 10 seconds later.
-            message.setDelayTimeLevel(3);
+            message.setDelayTimeLevel(3);//延迟消息级别  	1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
+//            message.setDeliverTimeMs(3);//延迟消息  毫秒
             // Send the message
             SendResult result = producer.send(message);
             System.out.print(result);

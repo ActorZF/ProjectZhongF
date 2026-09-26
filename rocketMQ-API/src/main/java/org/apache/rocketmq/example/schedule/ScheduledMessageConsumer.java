@@ -24,7 +24,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 public class ScheduledMessageConsumer {
 
     public static final String CONSUMER_GROUP = "ExampleConsumer";
-    public static final String DEFAULT_NAMESRVADDR = "192.168.65.112:9876";
+    public static final String DEFAULT_NAMESRVADDR = "192.168.1.4:9876";
     public static final String TOPIC = "TestTopic";
 
     public static void main(String[] args) throws Exception {

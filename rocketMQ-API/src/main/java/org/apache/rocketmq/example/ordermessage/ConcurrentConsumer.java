@@ -44,6 +44,7 @@ public class ConcurrentConsumer {
                 }
                 //消费者返回状态
                 return ConsumeOrderlyStatus.SUCCESS;
+                //SUSPEND_CURRENT_QUEUE_A_MOMENT  当前一个顺序消息中间的没有执行完成（错误），当前顺序会一直阻塞直到执行完成
             }
         });
 

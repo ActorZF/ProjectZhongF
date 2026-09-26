@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 public class TransactionProducer {
 
     public static final String PRODUCER_GROUP = "please_rename_unique_group_name";
-    public static final String DEFAULT_NAMESRVADDR = "192.168.65.112:9876";
+    public static final String DEFAULT_NAMESRVADDR = "192.168.1.4:9876";
     public static final String TOPIC = "TransTopic";
 
     public static final int MESSAGE_COUNT = 10;
