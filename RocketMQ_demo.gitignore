@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# IDEA
+.idea/
+*.iml
+
+# Maven 编译产物
+target/
+**/target/
+
+# 日志
+*.log
+
+# 测试文件（如果 testFile 是临时文件就保留这行，需要提交则删掉）
+# testFile/

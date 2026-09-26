@@ -1,0 +1,270 @@
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T190220.500.json
+
+###
+
+GET http://localhost:8080/test
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T190104.200.txt
+
+###
+
+GET http://localhost:8080/test
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T190007.404.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T185504.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T185408.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T185255.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T185228.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T185125.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184834.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184754.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184636.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184540.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184520.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184407.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T184339.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T180152.200.txt
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T175111.200.txt
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T175013.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T174103.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T174023.200.txt
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T173733.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T173718.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T173714.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T173313.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T171235.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T171118.500.json
+
+###
+
+GET http://localhost:9000/MQTest/sendMessage?message=123
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-09-24T171005.500.json
+
+###
+

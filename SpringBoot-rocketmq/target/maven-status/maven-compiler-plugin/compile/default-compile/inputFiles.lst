@@ -1,0 +1,9 @@
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/config/MyTransactionImpl.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/domain/ProductWithPayload.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/domain/OrderPaidEvent.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/config/SpringConsumer.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/RocketMQSBApplication.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/config/ExtRocketMQTemplate.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/controller/MQTestController.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/domain/User.java
+/Users/roykingw/DevCode/rocketMQ-demo/SpringBoot-rocketmq/src/main/java/com/roy/rocketmq/config/SpringProducer.java

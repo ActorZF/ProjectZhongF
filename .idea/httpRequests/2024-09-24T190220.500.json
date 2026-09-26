@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-09-24T11:02:20.349+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/MQTest/sendMessage"
+}
