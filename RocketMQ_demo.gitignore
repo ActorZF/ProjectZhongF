@@ -1,3 +1,4 @@
+gitignore
 # macOS
 .DS_Store
 
@@ -5,12 +6,9 @@
 .idea/
 *.iml
 
-# Maven 编译产物
+# Maven
 target/
 **/target/
 
-# 日志
+# Logs
 *.log
-
-# 测试文件（如果 testFile 是临时文件就保留这行，需要提交则删掉）
-# testFile/
